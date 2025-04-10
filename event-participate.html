@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>イベントに参加したい | 古賀市市民活動支援センター つながりひろば</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #f9f9f9;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 60px;
+            height: 60px;
+            background-color: #ffeb3b;
+            border-radius: 50%;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border: 1px solid #333;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #333;
+            margin-right: 1rem;
+        }
+        nav {
+            margin: 2rem 0;
+        }
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav-btn {
+            text-align: center;
+            flex: 1;
+            border: none;
+            background: transparent;
+            padding: 1rem 0;
+            cursor: pointer;
+        }
+        .active {
+            border-bottom: 2px solid #ffeb3b;
+            font-weight: bold;
+        }
+        .page-title {
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: #f5f5f5;
+            border-left: 4px solid #ffeb3b;
+        }
+        .content-section {
+            margin: 2rem 0;
+        }
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 1.5rem;
+        }
+        .tab {
+            padding: 0.5rem 1rem;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            margin-right: 0.5rem;
+            border-radius: 4px 4px 0 0;
+        }
+        .tab.active {
+            background-color: #ffeb3b;
+            border-bottom: none;
+        }
+        .event-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        .event-card {
+            width: calc(50% - 0.75rem);
+            border: 1px solid #eee;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .event-image {
+            height: 150px;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .event-content {
+            padding: 1rem;
+        }
+        .event-date {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .event-title {
+            margin: 0.5rem 0;
+            font-weight: bold;
+        }
+        .online-board {
+            background-color: #fffde7;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-top: 2rem;
+        }
+        .board-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .media-section {
+            margin-top: 3rem;
+        }
+        .media-cards {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .media-card {
+            flex: 1;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .media-image {
+            height: 100px;
+            background-color: #f5f5f5;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer {
+            margin-top: 3rem;
+            padding: 2rem 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-flex">
+            <div class="logo-area">
+                <a href="index.html">
+                    <div class="logo">
+                        <!-- Logo placeholder -->
+                    </div>
+                </a>
+                <h1>古賀市市民活動支援センター</h1>
+            </div>
+            <div class="header-buttons">
+                <a href="#" class="contact-btn">お問い合わせ</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav>
+            <div class="main-nav">
+                <a href="volunteer-participate.html" class="nav-btn">
+                    ボランティアに<br>参加したい
+                </a>
+                <a href="event-participate.html" class="nav-btn active">
+                    イベントに<br>参加したい
+                </a>
+                <a href="organization-activity.html" class="nav-btn">
+                    団体・市民活動を<br>したい
+                </a>
+                <a href="about.html" class="nav-btn">
+                    センター<br>について
+                </a>
+            </div>
+        </nav>
+
+        <div class="page-title">
+            <h2>イベントに参加したい</h2>
+        </div>
+
+        <section class="content-section">
+            <h3>つながりひろばイベント情報</h3>
+            <div class="tabs">
+                <div class="tab active">すべて</div>
+                <div class="tab">今月</div>
+                <div class="tab">来月</div>
+            </div>
+            
+            <div class="event-list">
+                <div class="event-card">
+                    <div class="event-image">イベント画像</div>
+                    <div class="event-content">
+                        <div class="event-date">2025年3月15日(土) 10:00～12:00</div>
+                        <div class="event-title">市民活動入門講座</div>
+                        <p>市民活動の始め方や団体の立ち上げ方について学びます。</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">イベント画像</div>
+                    <div class="event-content">
+                        <div class="event-date">2025年3月20日(木) 13:30～15:30</div>
+                        <div class="event-title">古布リサイクル講座</div>
+                        <p>古い布を使って、エコバッグを作ります。</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">イベント画像</div>
+                    <div class="event-content">
+                        <div class="event-date">2025年4月10日(木) 10:00～12:00</div>
+                        <div class="event-title">ボランティア交流会</div>
+                        <p>市内で活動するボランティア同士の交流会です。</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">イベント画像</div>
+                    <div class="event-content">
+                        <div class="event-date">2025年4月15日(火) 14:00～16:00</div>
+                        <div class="event-title">SDGs学習会</div>
+                        <p>持続可能な社会づくりについて考えます。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="online-board">
+                <div class="board-header">
+                    <h3>• オンライン掲示板</h3>
+                    <a href="#">オンライン掲示板一覧 ></a>
+                </div>
+                <p>登録団体からのお知らせを掲示板にしています</p>
+                <div class="event-list">
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="#" alt="きれいな谷間をつくろう！">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-date">2024年10月27日(日)</div>
+                            <div class="event-title">きれいな谷間をつくろう！</div>
+                            <p>古賀グリーンパークでゴミ拾い活動を行います。</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="#" alt="子ども食堂ボランティア募集">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-date">随時</div>
+                            <div class="event-title">子ども食堂ボランティア募集</div>
+                            <p>月1回の子ども食堂運営を手伝ってくれる方を募集しています。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="media-section">
+            <h3>情報発信メディア</h3>
+            <div class="media-cards">
+                <div class="media-card">
+                    <div class="media-image">わ・わ・わ通信</div>
+                    <h4>つながりひろば広報紙</h4>
+                    <p>年4回発行の市民活動情報誌</p>
+                    <a href="#">最新号を読む</a>
+                </div>
+                <div class="media-card">
+                    <div class="media-image">メールマガジン</div>
+                    <h4>つながりなかま</h4>
+                    <p>月1回の活動情報メールマガジン</p>
+                    <a href="#">登録する</a>
+                </div>
+                <div class="media-card">
+                    <div class="media-image">SNS</div>
+                    <h4>Facebook / Instagram</h4>
+                    <p>最新情報をSNSでチェック</p>
+                    <a href="#">フォローする</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>つながりひろば（市民活動支援センター）</p>
+            <p>電話: 092-942-1352 / FAX: 092-942-1353</p>
+            <p>住所: 〒811-3103 古賀市中央2-13-1 リーパスプラザこが中央公民館 1階</p>
+        </div>
+    </footer>
+</body>
+</html>

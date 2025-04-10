@@ -1,0 +1,121 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ヘッダー関連 */
+header {
+    background-color: #f9f9f9;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    background-color: #ffeb3b;
+    border-radius: 50%;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    margin-right: 1rem;
+}
+
+/* ナビゲーション */
+nav {
+    margin: 2rem 0;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-btn {
+    text-align: center;
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: 2px solid #ffeb3b;
+    font-weight: bold;
+}
+
+/* フッター */
+footer {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* ページタイトル */
+.page-title {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-left: 4px solid #ffeb3b;
+}
+
+/* コンテンツセクション */
+.content-section {
+    margin: 2rem 0;
+}
+
+/* カード */
+.card {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-title {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+/* ボタン */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ffeb3b;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+} 
