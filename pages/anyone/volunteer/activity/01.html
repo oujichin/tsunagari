@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<body>
+    <!-- Include Header -->
+    <div id="header-placeholder" data-include-path="../../../../includes/header.html"></div>
+
+    <div class="container">
+        <div class="page-title">
+            <h2>定例古布ティッシュ切りボランティア</h2>
+        </div>
+
+        <section class="content-section">
+            <div class="card">
+                <h3 class="card-title">活動概要</h3>
+                <div class="activity-header">
+                    <!-- 画像は一旦削除します。必要であれば後で追加してください。 -->
+                    <!-- <div class="activity-image">
+                        <img src="../../../images/volunteer-tissue.jpg" alt="古布ティッシュ切りボランティアの様子">
+                    </div> -->
+                    <div class="activity-summary">
+                        <p>古布ティッシュとは使い捨てのミニぞうきんです。介護施設や市内小中学校に届けています。集まったメンバーで古Tシャツを切って、古布ティッシュを作ります。</p>
+                        <ul class="highlight-list">
+                            <li><span class="highlight-label">日時</span>：4月19日（土）15:00～16:00（4月から時間が変わっています）</li>
+                            <li><span class="highlight-label">場所</span>：つながりひろば</li>
+                            <li><span class="highlight-label">定員</span>：8名</li>
+                            <li><span class="highlight-label">対象</span>：どなたでも</li>
+                            <li><span class="highlight-label">参加費</span>：無料</li>
+                            <li><span class="highlight-label">申込締切</span>：3日前まで</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">活動内容詳細</h3>
+                <div class="activity-description">
+                    <p>つながりひろばに集まったメンバーで、寄付された古Tシャツなどを適切なサイズに切って、古布ティッシュ（使い捨てミニぞうきん）を作ります。</p>
+                    <p>完成した古布ティッシュは、古賀市内の介護施設や小中学校など、必要としている場所へ届けられます。</p>
+                    <p>初めての方でも簡単にできる作業です。スタッフがサポートしますので、お気軽にご参加ください。</p>
+                    <p>※ ボランティア活動証明書の発行も可能です。ご希望の方はお申し出ください。</p>
+                </div>
+            </div>
+
+            <!-- スケジュール、参加者の声、古布寄付のセクションは削除 -->
+            <!-- <div class="card"> ... </div> -->
+            <!-- <div class="card"> ... </div> -->
+            <!-- <div class="card"> ... </div> -->
+
+            <div class="card">
+                <h3 class="card-title">参加申込</h3>
+                <div class="form-description">
+                    <p>参加をご希望の方は、以下のボタンからGoogleフォームにアクセスし、お申し込みください（申込締切：3日前まで）。</p>
+                    <p>※ ボランティア活動証明書の発行も可能です。フォーム内で希望を選択できます。</p>
+                    <div class="google-form-link">
+                        <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="submit-btn">参加申し込みフォームへ</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 参加者の声セクションを追加 -->
+            <div class="card">
+                <h3 class="card-title">参加者の声（本来はボランティア開催後にコメント表示）</h3>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <p class="testimonial-text">「初めて参加しましたが、作業が簡単で楽しかったです。Tシャツがミニぞうきんになるなんて驚きでした！」</p>
+                        <p class="testimonial-author">40代女性</p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">「短時間でサッと参加できるのがいいですね。地域のために何かできるのは嬉しいです。」</p>
+                        <p class="testimonial-author">60代男性</p>
+                    </div>
+                     <div class="testimonial">
+                        <p class="testimonial-text">「子供と一緒に参加しました。古布が再利用される過程を学べて、良い経験になりました。」</p>
+                        <p class="testimonial-author">30代女性（親子参加）</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 感想投稿フォームを追加 -->
+            <div class="card">
+                <h3 class="card-title">活動のご感想をお寄せください</h3>
+                <div class="form-description">
+                    <p><strong>このフォームは、実際にボランティア活動に参加された方からのご感想を受け付けています。</strong></p>
+                    <p>今後の活動の参考にさせていただきます。ぜひ、あなたの声をお聞かせください。</p>
+                    <p class="note">※ 投稿いただいたご感想は、管理者による確認後、個人が特定できない形でウェブサイト等に掲載させていただく場合があります。</p>
+                </div>
+                <form class="feedback-form" action="YOUR_SUBMISSION_ENDPOINT" method="post">
+                    <div class="form-group">
+                        <label for="feedback-name">お名前（ニックネーム可）</label>
+                        <input type="text" id="feedback-name" name="feedback-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback-message">ご感想 <span class="required">*</span></label>
+                        <textarea id="feedback-message" name="feedback-message" rows="5" required></textarea>
+                    </div>
+                     <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="publish-consent" value="yes">
+                            <span class="checkbox-text">ウェブサイトへの掲載に同意する</span>
+                        </label>
+                    </div>
+                    <div class="form-button">
+                        <button type="submit" class="submit-btn">感想を送る</button>
+                    </div>
+                </form>
+                 <p class="form-note">※ <span class="required">*</span> は必須項目です</p>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Include Footer -->
+    <div id="footer-placeholder" data-include-path="../../../../includes/footer.html"></div>
+
+    <script src="../../../../js/include.js"></script>
+</body>
+</html> 

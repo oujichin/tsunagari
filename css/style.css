@@ -129,4 +129,41 @@
     padding: 1.5rem;
     border-radius: 4px;
     margin-top: 1.5rem;
+}
+
+/* --- SNS Icons --- */
+.social-icons-large {
+    display: flex; /* アイコンを横並びにする */
+    gap: 15px; /* アイコン間の隙間 */
+    justify-content: center; /* 中央揃えにする場合 */
+    margin-top: 10px; /* 上のテキストとの間隔 */
+}
+
+.social-icons-large a {
+    display: inline-block; /* aタグのサイズをimgに合わせる */
+}
+
+.social-icons-large img {
+    width: 32px; /* アイコンの幅 */
+    height: 32px; /* アイコンの高さ */
+    vertical-align: middle; /* 中央揃えのため */
+}
+
+/* --- Volunteer Table --- */
+.volunteer-table {
+    width: 100%; /* テーブルの幅を100%に */
+    border-collapse: collapse; /* 罫線を重ねて表示 */
+    margin-top: 1rem; /* 上の要素との間隔 */
+}
+
+.volunteer-table th,
+.volunteer-table td {
+    border: 1px solid #ddd; /* 罫線の色と太さ */
+    padding: 8px; /* セル内の余白 */
+    text-align: left; /* テキストを左揃えに */
+}
+
+.volunteer-table th {
+    background-color: #f2f2f2; /* ヘッダー行の背景色 */
+    font-weight: bold; /* ヘッダー行の文字を太字に */
 } 

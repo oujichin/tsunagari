@@ -1,0 +1,142 @@
+/* Event List Styles */
+.event-list .section-subtitle {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.card-deck {
+    display: grid;
+    /* 縦長カード用に調整。列数を固定するか、minmaxで最小幅を指定 */
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* 画面幅に応じて列数が変わる */
+    gap: 1.5rem; /* Space between cards */
+    margin-bottom: 2rem;
+}
+
+.event-card {
+    display: flex; /* Flexbox を使用 */
+    flex-direction: column; /* 子要素を縦に並べる */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit text color */
+    position: relative; /* For the overlay link */
+    height: 360px; /* カードの固定高さを設定 */
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-card .card-img-top {
+    width: 100%;
+    /* 上半分を画像にするため高さを調整 */
+    height: 50%;
+    object-fit: cover;
+    flex-shrink: 0; /* 画像が縮まないように */
+}
+
+.event-card .card-body {
+    /* 下半分をテキストにする */
+    height: 50%;
+    padding: 0.8rem 1rem; /* パディング調整 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 内容を上下に分散 */
+    overflow: hidden; /* 内容が多い場合に隠す */
+}
+
+.event-card .card-title {
+    font-size: 1.1rem; /* 少し小さく調整 */
+    margin-bottom: 0.4rem;
+    color: #333;
+}
+
+/* Title link style removed as the whole card is a link */
+/* .event-card .card-title a { ... } */
+
+.event-card .card-text {
+    font-size: 0.85rem; /* 少し小さく調整 */
+    color: #666;
+    margin-bottom: 0.3rem;
+    /* Limit text lines if necessary */
+    /* display: -webkit-box; */
+    /* -webkit-line-clamp: 2; */
+    /* -webkit-box-orient: vertical; */
+    /* overflow: hidden; */
+}
+
+.event-card .event-date,
+.event-card .event-organizer {
+    font-weight: bold;
+    font-size: 0.8rem; /* 少し小さく調整 */
+    color: #444;
+    margin-bottom: 0.2rem;
+}
+
+/* Button removed */
+/* .event-card .btn { ... } */
+
+/* Overlay link to make the whole card clickable */
+.card-link-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1; /* Ensure it's above other content */
+    /* background-color: rgba(0,0,0,0.03); Optional: subtle hover indication */
+}
+
+/* Event Detail Page Styles (Keep existing or adjust as needed) */
+.event-detail-card .event-detail-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.event-detail-card .highlight-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.event-detail-card .highlight-list > li {
+    margin-bottom: 0.8rem;
+    border-left: 4px solid #007bff;
+    padding-left: 1rem;
+}
+
+.event-detail-card .highlight-list .highlight-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.2rem;
+    color: #333;
+}
+
+.event-detail-card .highlight-list ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    padding-left: 0;
+}
+
+.event-detail-card .highlight-list ul li {
+     border-left: none;
+     padding-left: 0;
+     margin-bottom: 0.3rem;
+}
+
+/* Adjustments for overall consistency if needed */
+.card-body {
+    line-height: 1.5; /* Slightly reduced line-height for compact card */
+} 

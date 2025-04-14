@@ -1,145 +1,86 @@
 <!DOCTYPE html>
 <html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>イベントのご案内 - つながりひろば</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/event_style.css"> <!-- イベント用CSS -->
+</head>
 <body>
     <!-- Include Header -->
     <div id="header-placeholder" data-include-path="../../../includes/header.html"></div>
 
     <div class="container">
         <div class="page-title">
-            <h2>イベントに参加したい</h2>
+            <h2>イベントのご案内</h2>
+            <p>つながりひろば主催のイベントや、登録団体が開催する交流イベントなどをご紹介します。</p>
         </div>
 
-        <section class="content-section">
-            <div class="card">
-                <h3 class="card-title">つながりひろばイベント情報</h3>
-                <p>市民活動支援センターが主催・共催するイベント情報をご案内します。</p>
-                
-                <div class="event-list">
-                    <h4>開催予定のイベント</h4>
-                    <table class="info-table">
-                        <thead>
-                            <tr>
-                                <th>日時</th>
-                                <th>イベント名</th>
-                                <th>場所</th>
-                                <th>対象</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>4月25日（木）<br>10:00～12:00</td>
-                                <td><a href="#" class="info-link">春の交流会「SDGsカードゲームを体験しよう」</a></td>
-                                <td>リーパスプラザこが<br>会議室1</td>
-                                <td>どなたでも<br>（要申込）</td>
-                            </tr>
-                            <tr>
-                                <td>5月15日（水）<br>13:30～15:30</td>
-                                <td><a href="#" class="info-link">市民活動のための広報講座「チラシ作成のコツ」</a></td>
-                                <td>リーパスプラザこが<br>会議室2</td>
-                                <td>市民活動団体<br>関係者</td>
-                            </tr>
-                            <tr>
-                                <td>6月7日（金）<br>19:00～20:30</td>
-                                <td><a href="#" class="info-link">古賀市NPO交流会</a></td>
-                                <td>リーパスプラザこが<br>交流室</td>
-                                <td>NPO法人・市民<br>活動団体</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <a href="event-list.html" class="btn">イベント一覧を見る</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="card-title">つながりひろば予定表</h3>
-                <p>つながりひろばの月間予定表です。つながりひろばで行われる活動や、交流スペースの利用予定などがわかります。</p>
-                
-                <div class="calendar-container">
-                    <h4>今月の予定表</h4>
-                    <div class="calendar-preview">
-                        <img src="../../../images/calendar-thumb.jpg" alt="つながりひろば予定表">
+        <section class="content-section event-list">
+            
+            <div class="card-deck">
+                <!-- イベントカード1: 市民活動相談会 -->
+                <div class="card event-card">
+                    <!-- 画像がない場合はプレースホルダー画像を使用 -->
+                    <img src="../../../images/no_image_placeholder.png" class="card-img-top" alt="イベントイメージ">
+                    <div class="card-body">
+                        <h4 class="card-title">「始めよう！市民活動」相談会</h4>
+                        <p class="card-text event-date">4月10日(木), 11日(金), 5月8日(木), 9日(金) 各14:00～16:00</p>
+                        <p class="card-text event-organizer">主催: つつながりひろば</p>
+                        <p class="card-text">市民活動に関する個別相談会です。</p>
+                        <!-- 詳細を見るボタンは削除 -->
                     </div>
-                    <ul class="calendar-links">
-                        <li><a href="#" class="doc-link">令和6年4月予定表（PDF）</a></li>
-                        <li><a href="#" class="doc-link">令和6年5月予定表（PDF）</a></li>
-                    </ul>
+                    <a href="./activity/01.html" class="card-link-overlay" aria-label="「始めよう！市民活動」相談会の詳細を見る"></a>
                 </div>
-                
-                <div class="calendar-notes">
-                    <h4>予定表の見方</h4>
-                    <ul>
-                        <li><span class="calendar-mark">★</span> 印はつながりひろば主催・共催行事</li>
-                        <li><span class="calendar-mark">☆</span> 印は登録団体主催行事</li>
-                        <li><span class="calendar-mark">■</span> 印はミーティングスペース利用予定</li>
-                    </ul>
-                    <p>※ 予定は変更になる場合があります。最新情報はお電話でお問い合わせください。</p>
-                </div>
-                
-                <a href="calendar.html" class="btn">予定表一覧を見る</a>
-            </div>
 
-            <div class="card">
-                <h3 class="card-title">登録団体の定例活動</h3>
-                <p>つながりひろばに登録している団体の定例活動情報です。会員募集中の団体も多数あります。</p>
-                
-                <div class="regular-activities">
-                    <h4>定例活動の例</h4>
-                    <table class="activity-table info-table">
-                        <thead>
-                            <tr>
-                                <th>団体名</th>
-                                <th>活動内容</th>
-                                <th>活動日時</th>
-                                <th>場所</th>
-                                <th>会員募集</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>古賀おもちゃクラブ</td>
-                                <td>子どもの居場所づくり・木のおもちゃ作り</td>
-                                <td>毎月第2土曜<br>10:00～12:00</td>
-                                <td>リーパスプラザこが</td>
-                                <td>募集中</td>
-                            </tr>
-                            <tr>
-                                <td>古賀エコ友の会</td>
-                                <td>環境保全活動・リサイクル工作</td>
-                                <td>毎月第3日曜<br>13:30～15:30</td>
-                                <td>市民公園</td>
-                                <td>募集中</td>
-                            </tr>
-                            <tr>
-                                <td>古賀朗読の会</td>
-                                <td>視覚障がい者向け音訳活動</td>
-                                <td>毎週金曜<br>10:00～12:00</td>
-                                <td>リーパスプラザこが</td>
-                                <td>要問合せ</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p>※ 活動に参加してみたい場合は、つながりひろばまでお問い合わせください。</p>
-                    <a href="regular-activities.html" class="btn">定例活動一覧を見る</a>
+                <!-- イベントカード2: 古布ティッシュ切り -->
+                 <div class="card event-card">
+                     <!-- 画像がない場合はプレースホルダー画像を使用 -->
+                    <img src="../../../images/no_image_placeholder.png" class="card-img-top" alt="イベントイメージ">
+                    <div class="card-body">
+                        <h4 class="card-title">定例古布ティッシュ切りボランティア</h4>
+                        <p class="card-text event-date">4月19日(土) 15:00～16:00</p>
+                        <p class="card-text event-organizer">主催: つながりひろば</p>
+                        <p class="card-text">古布を切ってミニぞうきんを作る活動です。</p>
+                         <!-- 詳細を見るボタンは削除 -->
+                    </div>
+                     <a href="../volunteer/activity/01.html" class="card-link-overlay" aria-label="定例古布ティッシュ切りボランティアの詳細を見る"></a>
                 </div>
-            </div>
 
-            <div class="card">
-                <h3 class="card-title">参加するには</h3>
-                <p>イベントや活動に参加するには、以下の方法でお申し込みください：</p>
-                <ul>
-                    <li>電話：092-942-1352（つながりひろば）</li>
-                    <li>メール：tsunagari@npo-ecoken.sakura.ne.jp</li>
-                    <li>窓口：つながりひろば受付（リーパスプラザこが中央公民館1階）</li>
-                    <li>LINE：友だち追加で簡単申込（QRコードからご登録ください）</li>
-                </ul>
-                <p>※ イベントによっては事前申込不要のものもあります。詳細は各イベント情報をご確認ください。</p>
-                <a href="how-to-join.html" class="btn">参加方法について詳しく見る</a>
-            </div>
+                <!-- イベントカード3: フォークダンス -->
+                <div class="card event-card">
+                    <img src="./activity/01/01.JPG" class="card-img-top" alt="フォークダンス地域交流会">
+                    <div class="card-body">
+                        <h4 class="card-title">楽しく踊ろうフォークダンスの集い 地域交流会</h4>
+                        <p class="card-text event-date">令和7年4月20日(日) 9:30～12:00</p>
+                        <p class="card-text event-organizer">主催: 古賀市スポーツ協会 / 主管: 古賀市フォークダンス協会</p>
+                        <p class="card-text">初心者歓迎のフォークダンス交流会です。</p>
+                         <!-- 詳細を見るボタンは削除 -->
+                    </div>
+                     <a href="./activity/02.html" class="card-link-overlay" aria-label="楽しく踊ろうフォークダンスの集いの詳細を見る"></a>
+                </div>
+
+                 <!-- 他のイベントがあればここに追加 -->
+             </div>
+
+            <!-- イベントカレンダーセクションを追加 -->
+            <section class="calendar-section" style="margin-top: 3rem;">
+                <h3 class="section-subtitle">イベントカレンダー</h3>
+                <p>イベントの開催日をカレンダー形式で確認できます。</p>
+                <div class="calendar-placeholder" style="border: 1px dashed #ccc; padding: 3rem; text-align: center; background-color: #f9f9f9;">
+                    <p style="color: #777;">ここにイベントカレンダーが表示されます。</p>
+                    <!-- 例: 将来的に画像やiframeなどを挿入 -->
+                    <!-- <img src="../../../images/calendar_placeholder.png" alt="イベントカレンダー"> -->
+                    <!-- <iframe src="[Your Calendar Embed URL]" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+                </div>
+            </section>
+
         </section>
     </div>
 
     <!-- Include Footer -->
-    <div id="footer-placeholder" data-include-path="../../includes/footer.html"></div>
+    <div id="footer-placeholder" data-include-path="../../../includes/footer.html"></div>
 
     <script src="../../../js/include.js"></script>
 </body>
