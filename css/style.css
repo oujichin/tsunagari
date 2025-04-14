@@ -1,87 +1,11 @@
-/* 共通スタイル */
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* ヘッダー関連 */
-header {
-    background-color: #f9f9f9;
-    padding: 1rem 0;
-    border-bottom: 1px solid #eee;
-}
-
-.header-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-area {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    width: 60px;
-    height: 60px;
-    background-color: #ffeb3b;
-    border-radius: 50%;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/* トップページ固有のスタイル */
 /* トップページのロゴサイズ調整 */
 .home .logo {
     width: 80px;
     height: 80px;
 }
 
-.contact-btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border: 1px solid #333;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #333;
-    margin-right: 1rem;
-}
-
-/* ナビゲーション */
-nav {
-    margin: 2rem 0;
-}
-
-.main-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-btn {
-    text-align: center;
-    flex: 1;
-    border: none;
-    background: transparent;
-    padding: 1rem 0;
-    cursor: pointer;
-}
-
-.active {
-    border-bottom: 2px solid #ffeb3b;
-    font-weight: bold;
-}
-
-/* トップページ固有のスタイル */
+/* ソーシャルボタン */
 .social-btn {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -97,18 +21,66 @@ nav {
     gap: 1rem;
 }
 
+.social-icons a {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* メインビジュアル */
+.main-visual {
+    margin: 2rem 0;
+    border: 1px solid #eee;
+    height: 300px;
+    position: relative;
+}
+
+/* 新着情報セクション */
+.news-section {
+    margin: 3rem 0;
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-all {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.news-item {
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.news-date {
+    margin-right: 1rem;
+}
+
+.news-tag {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    background-color: #4fc3f7;
+    color: white;
+    border-radius: 4px;
+}
+
 /* aboutページ固有のスタイル */
-.page-title {
-    margin: 2rem 0;
-    padding: 1rem;
-    background-color: #f5f5f5;
-    border-left: 4px solid #ffeb3b;
-}
-
-.content-section {
-    margin: 2rem 0;
-}
-
 .section-title {
     border-bottom: 2px solid #ffeb3b;
     padding-bottom: 0.5rem;
@@ -157,22 +129,4 @@ nav {
     padding: 1.5rem;
     border-radius: 4px;
     margin-top: 1.5rem;
-}
-
-.btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #ffeb3b;
-    color: #333;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 1rem;
-}
-
-/* フッター */
-footer {
-    margin-top: 3rem;
-    padding: 2rem 0;
-    background-color: #f9f9f9;
-    text-align: center;
 } 
