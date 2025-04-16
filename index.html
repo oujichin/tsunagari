@@ -6,6 +6,7 @@
     <title>古賀市市民活動支援センター つながりひろば</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/event_style.css">
 </head>
 <body class="home">
     <header>
@@ -76,34 +77,42 @@
                 <h2>• イベント情報</h2>
             </div>
             <!-- ここにカード形式のイベント情報を挿入 -->
-            <div class="card-list">
-                <div class="card">
-                    <img src="images/event_placeholder_1.jpg" alt="">
-                    <div class="card-content">
-                        <span class="card-date">2024.08.10</span>
-                        <h3 class="card-title">夏休み親子プログラミング教室</h3>
-                        <p class="card-excerpt">親子で楽しみながらプログラミングの基礎を学べます。</p>
-                        <a href="pages/anyone/event/detail_1.html" class="card-link">詳細を見る</a>
+            <div class="card-deck">
+                <!-- イベントカード1: 市民活動相談会 -->
+                <div class="card event-card">
+                    <img src="images/no_image_placeholder.png" class="card-img-top" alt="イベントイメージ">
+                    <div class="card-body">
+                        <h4 class="card-title">「始めよう！市民活動」相談会</h4>
+                        <p class="card-text event-date">4月10日(木), 11日(金), 5月8日(木), 9日(金) 各14:00～16:00</p>
+                        <p class="card-text event-organizer">主催: つながりひろば</p>
+                        <p class="card-text">市民活動に関する個別相談会です。</p>
                     </div>
+                    <a href="pages/anyone/event/activity/01.html" class="card-link-overlay" aria-label="「始めよう！市民活動」相談会の詳細を見る"></a>
                 </div>
-                <div class="card">
-                    <img src="images/event_placeholder_2.jpg" alt="">
-                    <div class="card-content">
-                        <span class="card-date">2024.09.15</span>
-                        <h3 class="card-title">シニア向けスマホ講座</h3>
-                        <p class="card-excerpt">スマートフォンの基本的な使い方から便利なアプリまで。</p>
-                        <a href="pages/anyone/event/detail_2.html" class="card-link">詳細を見る</a>
+
+                <!-- イベントカード2: 古布ティッシュ切り -->
+                <div class="card event-card">
+                    <img src="images/no_image_placeholder.png" class="card-img-top" alt="イベントイメージ">
+                    <div class="card-body">
+                        <h4 class="card-title">定例古布ティッシュ切りボランティア</h4>
+                        <p class="card-text event-date">4月19日(土) 15:00～16:00</p>
+                        <p class="card-text event-organizer">主催: つながりひろば</p>
+                        <p class="card-text">古布を切ってミニぞうきんを作る活動です。</p>
                     </div>
+                    <a href="pages/anyone/volunteer/activity/01.html" class="card-link-overlay" aria-label="定例古布ティッシュ切りボランティアの詳細を見る"></a>
                 </div>
-                <div class="card">
-                     <img src="images/event_placeholder_3.jpg" alt="">
-                     <div class="card-content">
-                         <span class="card-date">2024.10.20</span>
-                         <h3 class="card-title">古賀市クリーンアップ大作戦</h3>
-                         <p class="card-excerpt">みんなで街をきれいにしましょう！</p>
-                         <a href="pages/anyone/event/detail_3.html" class="card-link">詳細を見る</a>
-                     </div>
-                 </div>
+
+                <!-- イベントカード3: フォークダンス -->
+                <div class="card event-card">
+                    <img src="pages/anyone/event/activity/01/01.JPG" class="card-img-top" alt="フォークダンス地域交流会">
+                    <div class="card-body">
+                        <h4 class="card-title">楽しく踊ろうフォークダンスの集い 地域交流会</h4>
+                        <p class="card-text event-date">令和7年4月20日(日) 9:30～12:00</p>
+                        <p class="card-text event-organizer">主催: 古賀市スポーツ協会 / 主管: 古賀市フォークダンス協会</p>
+                        <p class="card-text">初心者歓迎のフォークダンス交流会です。</p>
+                    </div>
+                    <a href="pages/anyone/event/activity/02.html" class="card-link-overlay" aria-label="楽しく踊ろうフォークダンスの集いの詳細を見る"></a>
+                </div>
             </div>
             <a href="pages/anyone/event/" class="view-all">全てのイベントを見る ></a>
         </section>
@@ -130,30 +139,30 @@
             <table class="volunteer-table">
                 <thead>
                     <tr>
-                        <th>募集内容</th>
-                        <th>活動日時</th>
-                        <th>場所</th>
-                        <th>詳細</th>
+                        <th>番号</th>
+                        <th>行事名</th>
+                        <th>日時</th>
+                        <th>募集団体</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>お祭り運営スタッフ</td>
-                        <td>2024年8月20日(土) 9:00-17:00</td>
-                        <td>古賀市中央公園</td>
-                        <td><a href="pages/anyone/volunteer/detail_1.html">詳細</a></td>
+                        <td>4-3</td>
+                        <td><a href="pages/anyone/volunteer/activity/01.html" class="info-link">定例古布ティッシュ切りボランティア</a></td>
+                        <td>4月19日（土）<br>15:00～16:00</td>
+                        <td>つながりひろば</td>
                     </tr>
                     <tr>
-                        <td>子ども食堂のお手伝い</td>
-                        <td>毎週水曜日 15:00-18:00</td>
-                        <td>○○公民館</td>
-                        <td><a href="pages/anyone/volunteer/detail_2.html">詳細</a></td>
+                        <td>4-4</td>
+                        <td><a href="#" class="info-link">エコけんごみ拾い＆組成調査（リンク無し）</a></td>
+                        <td>4月20日（日）<br>10:00～11:30</td>
+                        <td>NPO法人エコけん</td>
                     </tr>
                     <tr>
-                        <td>図書館での読み聞かせ</td>
-                        <td>第2・第4土曜日 10:00-12:00</td>
-                        <td>古賀市立図書館</td>
-                        <td><a href="pages/anyone/volunteer/detail_3.html">詳細</a></td>
+                        <td>4-5</td>
+                        <td><a href="#" class="info-link">福岡ファミリーハウス ミール支援（お弁当作り）（リンク無し）</a></td>
+                        <td>4月23日(水)<br>10:00～16:00<br>（部分参加も可）</td>
+                        <td>福岡ファミリーハウス支援"SHIPS"</td>
                     </tr>
                 </tbody>
             </table>
@@ -188,17 +197,23 @@
                 <div class="news-item">
                     <span class="news-date">2025.03.11</span>
                     <span class="news-tag" style="background-color: #81c784;">ボランティア募集</span>
-                    <div class="news-title">大根川河ロバートウォッチング 補助スタッフ</div>
+                    <a href="pages/anyone/volunteer/activity/01.html" class="news-link">
+                        <div class="news-title">定例古布ティッシュ切りボランティア</div>
+                    </a>
                 </div>
                 <div class="news-item">
                     <span class="news-date">2025.03.01</span>
                     <span class="news-tag" style="background-color: #f48fb1;">イベント情報</span>
-                    <div class="news-title">定例古布ティッシュ切りボランティア</div>
+                    <a href="pages/anyone/event/activity/01.html" class="news-link">
+                        <div class="news-title">「始めよう！市民活動」相談会</div>
+                    </a>
                 </div>
                 <div class="news-item">
                     <span class="news-date">2024.07.04</span>
                     <span class="news-tag" style="background-color: #ffd54f;">センターからのお知らせ</span>
-                    <div class="news-title">Facebookページが新しくなりました</div>
+                    <a href="pages/info/facebook_update.html" class="news-link">
+                        <div class="news-title">Facebookページが新しくなりました</div>
+                    </a>
                 </div>
             </div>
         </section>
