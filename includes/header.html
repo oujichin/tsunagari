@@ -30,24 +30,7 @@
 <nav>
     <div class="container">
         <div class="main-nav">
-            <div class="nav-item">
-                <div class="nav-category">どなたでも</div>
-                <div class="submenu">
-                    <a href="/pages/anyone/volunteer/" class="submenu-item">ボランティアに参加したい</a>
-                    <a href="/pages/anyone/event/" class="submenu-item">イベントに参加したい</a>
-                    <a href="/pages/anyone/lecture/" class="submenu-item">出前講座・団体情報</a>
-                    <a href="/pages/anyone/group-registration/" class="submenu-item">団体登録をしたい</a>
-                </div>
-            </div>
-            <div class="nav-item">
-                <div class="nav-category">登録団体対象</div>
-                <div class="submenu">
-                    <a href="/pages/organization/volunteer/" class="submenu-item">ボランティアを募集したい</a>
-                    <a href="/pages/organization/event/" class="submenu-item">イベントを周知したい</a>
-                    <a href="/pages/organization/facility/" class="submenu-item">センター設備を利用したい</a>
-                    <a href="/pages/organization/support/" class="submenu-item">活動サポート（助成金・補償・広報）</a>
-                </div>
-            </div>
+            <!-- センターについて -->
             <div class="nav-item">
                 <div class="nav-category">センターについて</div>
                 <div class="submenu">
@@ -55,6 +38,38 @@
                     <a href="/pages/center/access/" class="submenu-item">アクセス・利用案内</a>
                     <a href="/pages/center/media/" class="submenu-item">情報発信・メディア</a>
                 </div>
+            </div>
+            <!-- 登録団体紹介 -->
+            <div class="nav-item">
+                <div class="nav-category">登録団体紹介</div>
+                <div class="submenu">
+                    <a href="/pages/group/introduction/" class="submenu-item">登録団体紹介</a>
+                    <a href="/pages/anyone/lecture/" class="submenu-item">出前講座一覧</a>
+                </div>
+            </div>
+            <!-- ボランティア参加 -->
+            <div class="nav-item">
+                <a href="/pages/anyone/volunteer/" class="nav-category nav-link">ボランティア参加</a>
+            </div>
+            <!-- イベント参加 -->
+            <div class="nav-item">
+                 <a href="/pages/anyone/event/" class="nav-category nav-link">イベント参加</a>
+            </div>
+            <!-- 団体登録 -->
+            <div class="nav-item">
+                 <a href="/pages/anyone/group-registration/" class="nav-category nav-link">団体登録</a>
+            </div>
+
+            <!-- スペーサー要素 (CSSで調整) -->
+            <div class="nav-spacer" style="flex-grow: 1;"></div>
+
+            <!-- 登録団体ページ (アイコン) -->
+            <div class="nav-item nav-item-icon">
+                <a href="/pages/organization/" class="nav-icon-link" title="登録団体ページ">
+                    <!-- 仮のアイコン表示 -->
+                    <span style="display: inline-block; width: 30px; height: 30px; background-color: #ccc; border-radius: 50%; text-align: center; line-height: 30px;">団</span> 
+                    <span class="icon-text">登録団体ページ</span>
+                </a>
             </div>
         </div>
     </div>
